@@ -203,4 +203,10 @@ body{
     .gender-input{
         margin-top: 0.5rem;
     }
+    input{
+        font-size: 16px;
+    }
+    .login-button{
+        margin-left: 91px;
+    }
 }
