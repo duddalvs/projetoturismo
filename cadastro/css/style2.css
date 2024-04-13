@@ -185,6 +185,7 @@ body{
     .container {
         width: 90%;
         height: auto;
+        margin: 0;
     }
     .input-group {
         flex-direction: column;
