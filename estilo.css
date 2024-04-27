@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #004070;
+}
+
+.div-formulario{
+    width: 400px;
+    height: 1500px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.548);
+    border-radius: 20px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-pessoais{
+    margin-top: 30px;
+}
+
+.contato{
+    margin-top: 30px;
+}
+
+.interesses_academicos{
+    margin-top: 30px;
+}
+
+.exp_profissional{
+    margin-top: 30px;
+}
+
+textarea{
+    border: 1px solid black;
+    padding: 5px;
+    width: 300px;
+    height: 20px;
+}
+
+.botoes{
+    margin-top: 30px;
+}
+
+.botao{
+    background-color: #EF7D00;
+    width: 140px;
+    height: 30px;
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 2px solid black ;
+ 
+}
