@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -37,6 +37,8 @@
                     </div>
                    </div>
                    <div class="contato">
+
+
                     <p>Contato</p>
                     <div class="telefone">
                         Telefone: <input type="tel" name="Telefone" placeholder="xx - xxxxxxxxx*" size="50">
@@ -58,11 +60,12 @@
                         CEP: <input type="text" name="CEP" placeholder="CEP*" required size="50">
                     </div>
                    </div>
+                   
                    <div class="interesses_academicos">
                         <p>Interesse Acadêmicos</p>
                         <div class="cursos_de_interesse">
                             Cursos de Interesses:
-                            <select name="curso_de_intersse" required >
+                            <select name="curso_de_intersse" required class="select">
                                 <option value="Administração">Administração</option>
                                 <option value="Agronomia">Agronomia</option>
                                 <option value="Arquitetura">Arquitetura</option>
@@ -106,9 +109,9 @@
                         <br>
                         <div class="semestre_de_ingresso">
                             Semestre de ingresso:
-                            <select name="Semestre de Ingresso" required >
-                                <option value="2024.1" class="semestre">2024.1</option>
-                                <option value="2024.2" class="semestre">2024.2</option>
+                            <select name="Semestre de Ingresso" required class="select" >
+                                <option value="2024.1" >2024.1</option>
+                                <option value="2024.2" >2024.2</option>
                             </select>
                         </div>
                    </div>
@@ -123,11 +126,11 @@
                     </div>
                     <br>
                     <div class="data_inicio">
-                        Data de Início: <input type="date" required >
+                        Data de Início: <input type="date" class="inicio" required >
                     </div>
                     <br>
                         <div class="data_termino">
-                            Data de Término: <input type="date" required >
+                            <p>Data de Término:</p> <input type="date" class="final" required >
                         </div>
                    </div>
                    <br>
