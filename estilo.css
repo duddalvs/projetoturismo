@@ -10,17 +10,29 @@ body{
 
 .div-formulario{
     width: 400px;
-    height: 1500px;
+    height: 1550px;
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.548);
     border-radius: 20px;
     margin: auto;
     background-color: white;
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 h1{
     margin-top: 20px;
     text-align: center;
+    color: black;
+    /*
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    */
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 input{
@@ -28,6 +40,7 @@ input{
     border-radius: 20px;
     height: 20px;
     padding: 5px;
+    margin-top: 3px;
 }
 
 .logo{
@@ -41,35 +54,42 @@ input{
 }
 
 .contato{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .interesses_academicos{
-    margin-top: 30px;
+    margin-top: 40;
 }
 
 .exp_profissional{
-    margin-top: 30px;
+    margin-top: 40;
 }
 
 textarea{
     border: 1px solid black;
     padding: 5px;
-    width: 300px;
+    width: 365px;
     height: 20px;
+    border-radius: 15px;
 }
 
 .botoes{
-    margin-top: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .botao{
     background-color: #EF7D00;
-    width: 140px;
-    height: 30px;
+    width: 160px;
+    height: 45px;
     color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     font-size: 18px;
     border: 2px solid black ;
- 
+}
+
+#botao_direito{
+    margin-left: 20px;
 }
