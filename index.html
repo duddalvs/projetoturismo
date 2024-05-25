@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div class="div-formulario">
+    <!--<div class="div-formulario">
         <div class="form_interno">
             <form action="" method="get">
                 <div class="logo">
@@ -146,5 +146,38 @@
             </form>
         </div>
     </div>
+-->
+    <div id="form-container">
+    <h1>cadastre-se</h1>
+    <form id="cadastroForm" onsubmit="return validarForm()" action="https://www.unisuam.edu.br/" method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required minlength="10" name="Nome" placeholder="nome">
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" required min="18" max="99" name="Idade"  placeholder="idade">
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" required name="Endereco" placeholder="enderenço">
+
+      <label for="login">Login (5 caracteres):</label>
+      <input type="text" id="login" required minlength="5" maxlength="5" name="Login"  placeholder="login">
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" required minlength="5" maxlength="8" name="Senha" placeholder="Senha (de 5 à 8 caracteres)"> 
+
+      <label for="repetirSenha">Repetir Senha:</label>
+      <input type="password" id="repetirSenha" required minlength="5" maxlength="8" name="ConfirmarSenha" placeholder="Senha (de 5 à 8 caracteres)">
+
+      <div id="senhaMismatch" class="hidden">
+        <span class="close" onclick="fecharAviso()">&times;</span>
+        As senhas não coincidem.
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
