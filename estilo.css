@@ -150,7 +150,6 @@ textarea{
     }
     
     form {
-      display: flex;
       flex-direction: column;
     }
     
