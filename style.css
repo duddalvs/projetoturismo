@@ -75,6 +75,9 @@ header {
 }
 
 @media screen and (max-width: 730px) {
+    .mobile-menu{
+    background-color: #131314;
+    }
     .nav-bar {
         padding: 1.5rem 4rem;
     }
