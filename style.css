@@ -214,10 +214,21 @@ header {
     margin-bottom: 50px;
 }
 
+
+
 .imagem-premio{
-    width: 550px;
-    height: 500px;
-    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;   
+}
+
+.imagem-premio img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+
 }
 
 .descricao-premio{
@@ -398,17 +409,8 @@ hr{
     }
 }
 
-
-
-
-
 .vida-saudavel{
     display: flex;
-}
-
-.imagemsaudavel{
-    background-color: aqua;
-    height: 590px;
 }
 
 .p-vida-saudavel h1{
@@ -422,8 +424,6 @@ hr{
     text-align: justify;
     line-height: 25px;
 }
-
-
 
 @media screen and (max-width: 730px){
     .vida-saudavel{
@@ -440,15 +440,28 @@ hr{
 }
 
 
-/* -----------------Maps----------------------------------------------------------- */
+.imagemsaudavel{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;   
+}
 
+.imagemsaudavel img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+
+}
+
+
+/* -----------------Maps----------------------------------------------------------- */
 
 #map {
     height: 600px;  
     width: 100%;
 }
-
-
 
 /* -----------------MODALIDADES----------------------------------------------------------- */
 
@@ -529,7 +542,6 @@ hr{
 .treino:hover{
     border: 1px solid chocolate;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.377);
-
 }
 
 .treino h3{
@@ -728,6 +740,15 @@ hr{
     }
 }
 
+@media screen and (max-width: 443px){
+    .planos{
+        display: flex;
+    }
+    .melhor-academia{
+        margin-top: 670px;
+    }
+}
+
 .titulo-img-planos{
     margin-top: 80px;
 }
@@ -738,6 +759,8 @@ hr{
     align-items: center;
     margin-left: 100px;
     gap: 40px;
+    flex-wrap: wrap;
+
 }
 
 .img-planos{
