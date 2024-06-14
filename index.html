@@ -2,182 +2,120 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academias</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--<div class="div-formulario">
-        <div class="form_interno">
-            <form action="" method="get">
-                <div class="logo">
-                    <img src="assets/imagem/logo_unisuam_horizontal_color.png" width="200px" alt="logo da unisuam">
-                </div>
-                <h1>Vire uma Coruja!</h1>
-                <div class="info-pessoais">
-                    <p>Informações Pessoais</p>
-                    <div class="nome">
-                        Nome: <input type="text" placeholder="Nome*" name="Nome" required size="50">
-                    </div>
-                    <br>
-                    <div class="sobrenome">
-                        Sobrenome: <input type="text" placeholder="Sobrenome*" name="Sobrenome" required size="50">
-                    </div>
-                    <br>
-                    <div class="email">
-                        E-mail: <input type="email" placeholder="E-mail*" name="Email" required size="50">
-                    </div>
-                    <br>
-                    <div class="senha">
-                        Senha: <input type="password" placeholder="Senha*" name="senha" required size="50">
-                    </div>
-                    <br>
-                    <div class="confirme_senha">
-                        Confirme sua senha: <input type="password" placeholder="Confirme Sua Senha*" name="Confirmação_da_senha" required size="50">
-                    </div>
-                   </div>
-                   <div class="contato">
 
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>LorenFit</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="academias.html" class="nav-link">Academias</a></li>
+                    <li class="nav-item"><a href="modalidades.html" class="nav-link"> Modalidades</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link"> Planos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Área do Aluno</a></button>
+            </div>
 
-                    <p>Contato</p>
-                    <div class="telefone">
-                        Telefone: <input type="tel" name="Telefone" placeholder="xx - xxxxxxxxx*" size="50">
-                    </div>
-                    <br>
-                    <div class="endereco">
-                        Endereço: <input type="text" name="Endereço" placeholder="Endereço*" required size="50"> 
-                    </div>
-                    <br>
-                    <div class="cidade">
-                        Cidade: <input type="text" name="Cidade" placeholder="Cidade*" required size="50">
-                    </div>
-                    <br>
-                    <div class="estado">
-                        Estado: <input type="text" name="Estado*" placeholder="Estado" required size="50">
-                    </div>
-                    <br>
-                    <div class="cep">
-                        CEP: <input type="text" name="CEP" placeholder="CEP*" required size="50">
-                    </div>
-                   </div>
-                   
-                   <div class="interesses_academicos">
-                        <p>Interesse Acadêmicos</p>
-                        <div class="cursos_de_interesse">
-                            Cursos de Interesses:
-                            <select name="curso_de_intersse" required class="select">
-                                <option value="Administração">Administração</option>
-                                <option value="Agronomia">Agronomia</option>
-                                <option value="Arquitetura">Arquitetura</option>
-                                <option value="Artes_Cênicas">Artes Cênicas</option>
-                                <option value="Biologia">Biologia</option>
-                                <option value="Biomedicina">Biomedicina</option>
-                                <option value="Ciência_da_computação">Ciência da Computação</option>
-                                <option value="Ciência Política">Ciência Política</option>
-                                <option value="Ciências Sociais">Ciências Sociais</option>
-                                <option value="Comércio Exterior">Comércio Exterior</option>
-                                <option value="Desing de Interiores">Desing de Interiores</option>
-                                <option value="Desind de Moda">Desing de Moda</option>
-                                <option value="Desing Gráfico">Desing Gráfico</option>
-                                <option value="Direito">Direito</option>
-                                <option value="Educação Física">Educação Física</option>
-                                <option value="Enfermagem">Enfermagem</option>
-                                <option value="Engenharia Ambienteal">Engenharia Ambienteal</option>
-                                <option value="Engenaria de Software">Engenahria de Software</option>
-                                <option value="Fármacia">Fármacia</option>
-                                <option value="Filosofia">Filosofia</option>
-                                <option value="Física">Física</option>
-                                <option value="Geografia">Geografia</option>
-                                <option value="Jornalismo">Jornalismo</option>
-                                <option value="Letras">Letras</option>
-                                <option value="Logistica">Logística</option>
-                                <option value="matemática">Matemática</option>
-                                <option value="Medicina">Medicina</option>
-                                <option value="Medicina Veterinária">Medicina Veterinária</option>
-                                <option value="Moda">Moda</option>
-                                <option value="Nutrição">Nutrição</option>
-                                <option value="Odontologia">Odontologia</option>
-                                <option value="Pedagogia">Pedagogia</option>
-                                <option value="Psicologia">Psicologia</option>
-                                <option value="Química">Química</option>
-                                <option value="Relações Internacionais">Relações Internacionais</option>
-                                <option value="Sistemas de Informação">Sistemas de Informação</option>
-                                <option value="Sociologia">Sociologia</option>
-                                <option value="Teologia">Teologia</option>
-                            </select>
-                        </div>
-                        <br>
-                        <div class="semestre_de_ingresso">
-                            Semestre de ingresso:
-                            <select name="Semestre de Ingresso" required class="select" >
-                                <option value="2024.1" >2024.1</option>
-                                <option value="2024.2" >2024.2</option>
-                            </select>
-                        </div>
-                   </div>
-                   <div class="exp_profissional">
-                    <p>Experiência Prossional</p>
-                    <div class="empresa">
-                        Empresa: <input type="text" name="empresa" placeholder="Empresa de Atuação" required size="50">
-                    </div>
-                    <br>
-                    <div class="cargo">
-                        Cargo: <input type="text" name="cargo" placeholder="Cargo" required size="50">
-                    </div>
-                    <br>
-                    <div class="data_inicio">
-                        Data de Início: <input type="date" class="inicio" required >
-                    </div>
-                    <br>
-                        <div class="data_termino">
-                            <p>Data de Término:</p> <input type="date" class="final" required >
-                        </div>
-                   </div>
-                   <br>
-                   <div class="observacao">
-                    <div class="area_de_obs">
-                        Observação: <textarea name="observação" cols="30" rows="5" ></textarea>
-                    </div>
-                   </div>
-                   <div class="botoes">
-                    <input type="submit" value="Enviar" class="botao">
-                    <input type="reset" value="Apagar" class="botao" id="botao_direito">
-                   </div>
-            </form>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="academias.html" class="nav-link">Academias</a></li>
+                    <li class="nav-item"><a href="modalidades.html" class="nav-link"> Modalidades</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link"> Planos</a></li>
+            </ul>
+            <div class="login-button">
+                <button><a href="login.html">Área do Aluno</a></button>
+            </div>
         </div>
+    </header>
+
+    <script src="script.js"></script>
+
+
+    <div class="titulo-academia">
+        <h1>E aí, Onde você quer treinar?</h1>
     </div>
--->
-    <div id="form-container">
-    <h1>cadastre-se</h1>
-    <form id="cadastroForm" onsubmit="return validarForm()" action="https://www.unisuam.edu.br/" method="get">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" required minlength="10" name="Nome" placeholder="nome">
+    <div class="academias">
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
+        <div class="academia-local">
+            <img src="imagens/academiaumm.jpg" alt="academia um">
+            <h3>Avenida Angélica</h3>
+            <p>Avenida Angélica, 2424, 2424 - consolação, são Paulo</p>
+            <button class="button-academia-local">Ver Planos</button>
+        </div>
 
-      <label for="idade">Idade:</label>
-      <input type="number" id="idade" required min="18" max="99" name="Idade"  placeholder="idade">
+    </div>
 
-      <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" required name="Endereco" placeholder="enderenço">
 
-      <label for="login">Login:</label>
-      <input type="text" id="login" required minlength="5" maxlength="5" name="Login"  placeholder="login (5 caracteres)">
 
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" required minlength="5" maxlength="8" name="Senha" placeholder="Senha (de 5 à 8 caracteres)"> 
+    <Footer>
+        &copy;
+        <p>Maria Eduarda</p>
+        <p>Lorena</p>
+        <p>Yasmin</p>
+        <p>Beatriz</p>
+    </Footer>
 
-      <label for="repetirSenha">Repetir Senha:</label>
-      <input type="password" id="repetirSenha" required minlength="5" maxlength="8" name="ConfirmarSenha" placeholder="Senha (de 5 à 8 caracteres)">
-
-      <div id="senhaMismatch" class="hidden">
-        <span class="close" onclick="fecharAviso()">&times;</span>
-        As senhas não coincidem.
-      </div>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
 
 </body>
 </html>

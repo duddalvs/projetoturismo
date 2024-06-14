@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>LorenFit</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="modalidades.html" class="nav-link"> Modalidades</a></li>
+                    <li class="nav-item"><a href="planos.html" class="nav-link"> Planos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="cadastro.html">Cadastre-se</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="academias.html" class="nav-link">Academias</a></li>
+                <li class="nav-item"><a href="modalidades.html" class="nav-link"> Modalidades</a></li>
+                <li class="nav-item"><a href="planos.html" class="nav-link"> Planos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="cadastro.html">Cadastre-se</a></button>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+
+
+    <div class="container-login">
+        <div class="form-login">
+            <form>
+                <div class="login-titulo">
+                    <h1>LorenFit</h1>
+                </div>
+                <div class="login-usuario">
+                    <!--<label for="idloginUsuario">Login: </label>-->
+                    <input class="input-login" type="text" id="idloginUsuario" name="Login" placeholder="Digite seu e-mail / usuário" maxlength="30">
+                </div>
+                <div class="login-senha">
+                    <!--<label for="idLoginSenha">Senha: </label>-->
+                    <input class="input-login" type="password" id="idLoginSenha" name="senha" placeholder="Digite sua senha" maxlength="12">
+                </div>
+                <div class="criarconta">
+                    <a href="cadastro.html" class="a-cadastro"> não possui uma conta? Cadastre-se já!</a>
+                </div>
+                <div class="entrar">
+                    <button class="botao-login-entrar">Entrar</button>
+                </div>
+                </div>
+            </form>
+        </div>
+
+
+        
+        <Footer>
+            &copy;
+            <p>Maria Eduarda</p>
+            <p>Lorena</p>
+            <p>Yasmin</p>
+            <p>Beatriz</p>
+        </Footer>
+</body>
+</html>

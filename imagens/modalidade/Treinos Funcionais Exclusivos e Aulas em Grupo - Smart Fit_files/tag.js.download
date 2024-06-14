@@ -1,0 +1,28 @@
+function sc(v){if (v===null){return};var dateAf=new Date();dateAf.setTime(dateAf.getTime()+(365*24*60*60*1000));document.cookie="affclick="+v+";"+"expires="+dateAf.toUTCString()+";path=/";localStorage.setItem('affclick',v)}sc((new URLSearchParams(window.location.search)).get("clickid"));
+(function(){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//mediaads.co/tag/js?rtid=ZXC-1700700437298564";
+        script.async = true;
+        document.head.append(script);
+    })();
+
+
+(function(){
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//tags.fulllab.com.br/scripts/produto_smartfit.js";
+        script.async = true;
+        document.head.append(script);
+    })();
+  (function (d, b, t) {
+    "use strict";
+    var s = document.createElement(t), c = (d.getElementsByTagName(t)[0]);
+    s.setAttribute("src", "https://retargeting.lista10.dev/resources/content/smartfit.js");
+    s.setAttribute("async", true);
+    if (c) {
+      var n = c.parentNode; n.insertBefore(s, c);
+    } else {
+      b.appendChild(s);
+    }
+  })(document, document.body, "SCRIPT");
